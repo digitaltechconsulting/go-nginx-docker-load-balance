@@ -10,7 +10,7 @@ You must have docker installed on your Mac/Windows machine.
 
 # API Setup
 
-In this example we will create a very simple API using **golang** . Separate [Readme](src/web-api/ReamMe.md) file is included inside **web-api** directory 
+In this example we will create a very simple API using **golang** . Separate [Readme](src/web-api/ReadMe.md) file is included inside **web-api** directory 
 
 # Setting up NGINX server
 Separate [Readme](src/nginx/Readme.md) file is included inside **nginx** folder
