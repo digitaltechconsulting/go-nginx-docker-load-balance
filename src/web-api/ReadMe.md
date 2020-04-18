@@ -1,7 +1,7 @@
 # Setting up API container(s)
 
 ```docker 
-docker build -t nginx-as-load-balancer-web-api:dev .
+docker build -t web-api-load-balance:dev .
 ```
 > Above command will generate image named **web-api-load-balance:dev**
 
