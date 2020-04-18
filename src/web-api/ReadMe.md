@@ -5,7 +5,7 @@ docker build -t web-api-load-balance:dev .
 ```
 > Above command will generate image named **web-api-load-balance:dev**
 
-Now we will create two containers **api1** and **api2** exposing two different ports **4001** and **4002** to external world.  These two containers will be our two workers.
+Now we will create two containers **apiserver1** and **apiserver2** exposing two different ports **4001** and **4002** to external world.  These two containers will be our two workers.
 
 ```docker
 docker run --name apiserver1 -d -p 4001:4000 -e DOCKER_INSTANCE_ID='server1'   web-api-load-balance:dev
