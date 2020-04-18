@@ -1,11 +1,12 @@
-# digitaltechconsulting/go-nginx-docker-load-balance
+# Load Balancing Go Application with NGINX and Docker
 
-This is a simple example to demonstrate how can we use Nginx as a reverse proxy.
+This is a simple example to demonstrate how Nginx as a reverse proxy.
 -  [Getting Started](#getting-started)
 -  [API Setup](#api-setup)
 -  [Setting up NGINX server](#setting-up-nginx-server)
 
 # Getting Started
+You must have docker installed on your Mac/Windows machine.  
 
 # API Setup
 
