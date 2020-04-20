@@ -1,13 +1,16 @@
 #https://pspdfkit.com/blog/2018/how-to-use-docker-compose-to-run-multiple-instances-of-a-service-in-development/
+#https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-multi-container-app
+#https://blog.lukasvavrek.com/containers-on-microsoft-azure/
 
+#docker-compose up --scale go-web-api=4
+#docker-compose down
 version: '3'
 services: 
   go-web-api:
     build: ./web-api
+    image: "digitalconsulting.azurecr.io/go-web-api"
     ports: 
       - "4040"
-    image: "digitalconsulting.azurecr.io/go-web-api"
-    #container_name: "go-web-api"
   go-front-end:
     build: ./nginx
     image: "digitalconsulting.azurecr.io/go-front-end"
