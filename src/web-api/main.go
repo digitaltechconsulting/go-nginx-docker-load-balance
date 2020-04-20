@@ -9,9 +9,10 @@ import (
 
 func main() {
 
-	port := ":4000"
+	port := ":4040"
 	http.HandleFunc("/", ProcessRequest)
 	err := http.ListenAndServe(port, nil)
+	fmt.Println("Starting server...")
 	fmt.Println(err)
 }
 
