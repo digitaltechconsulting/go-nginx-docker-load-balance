@@ -2,8 +2,12 @@
 #https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-multi-container-app
 #https://blog.lukasvavrek.com/containers-on-microsoft-azure/
 
+#cd web-api
+#gox -osarch="linux/amd64" --output="build/app"
+#cd..
 #docker-compose up --scale go-web-api=4
 #docker-compose down
+
 version: '3'
 services: 
   go-web-api:
