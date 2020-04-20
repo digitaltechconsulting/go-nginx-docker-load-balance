@@ -1,0 +1,18 @@
+#https://pspdfkit.com/blog/2018/how-to-use-docker-compose-to-run-multiple-instances-of-a-service-in-development/
+
+version: '3'
+services: 
+  go-web-api:
+    build: ./web-api
+    ports: 
+      - "4040"
+    image: "digitalconsulting.azurecr.io/go-web-api"
+    #container_name: "go-web-api"
+  go-front-end:
+    build: ./nginx
+    image: "digitalconsulting.azurecr.io/go-front-end"
+    ports:
+      - "4000:4000"
+    depends_on: 
+      - "go-web-api"
+    

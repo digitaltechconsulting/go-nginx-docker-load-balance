@@ -1,11 +1,7 @@
 FROM golang
 
-WORKDIR /app
+EXPOSE 4040
 
-COPY . .
+ADD build/app .
 
-RUN go build .
-
-# Not sure if there is better way
-# to trigger execution. 
-ENTRYPOINT [ "go","run","." ]
+ENTRYPOINT [ "./app" ]
